@@ -1,0 +1,10 @@
+metodo,fase_verdadera,pred_defensiva,pred_transicion,pred_ataque
+vit,defensiva,157943,21876,15158
+vit,transicion,98947,42059,26433
+vit,ataque,55068,23397,59119
+ref,defensiva,136719,48524,9734
+ref,transicion,66945,83792,16702
+ref,ataque,41323,41318,54943
+post,defensiva,134433,48591,11953
+post,transicion,64292,82581,20566
+post,ataque,37696,40432,59456

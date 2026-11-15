@@ -1,0 +1,1 @@
+posterior_decode = argmax de marginales exactas en 100/100 secuencias

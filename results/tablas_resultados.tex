@@ -1,0 +1,79 @@
+\begin{table}[ht]
+\centering
+\caption{Exactitud media por paso de cada método y diferencias pareadas con IC95\,\% ($R=100$ réplicas; $S=50$ secuencias de $T=100$ acciones por réplica). $D=\mathrm{Acc}^{\mathrm{Vit}}-\mathrm{Acc}^{\mathrm{ref}}$ (variable principal); $D_{\mathrm{post}}=\mathrm{Acc}^{\mathrm{post}}-\mathrm{Acc}^{\mathrm{ref}}$ (secundaria). Las desviaciones estándar están en \texttt{results/resumen.csv}.}
+\label{tab:res}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llccccc}
+\toprule
+Esc. & Nivel & Viterbi & Posterior & Referencia & $\bar D$ [IC95\,\%] & $\bar D_{\mathrm{post}}$ [IC95\,\%] \\
+\midrule
+E1 & $\eta=\kappa=0$ & 0.5182 & 0.5529 & 0.5509 & $-0.0327$ $[-0.0340,\,-0.0313]$ & $+0.0020$ $[+0.0016,\,+0.0025]$ \\
+\midrule
+E2 & $\eta=0.25$ & 0.4436 & 0.4974 & 0.4968 & $-0.0531$ $[-0.0550,\,-0.0513]$ & $+0.0006$ $[+0.0003,\,+0.0010]$ \\
+ & $\eta=0.5$ & 0.3962 & 0.4446 & 0.4416 & $-0.0453$ $[-0.0476,\,-0.0431]$ & $+0.0030$ $[+0.0023,\,+0.0037]$ \\
+ & $\eta=0.75$ & 0.3900 & 0.4000 & 0.3928 & $-0.0029$ $[-0.0042,\,-0.0015]$ & $+0.0072$ $[+0.0059,\,+0.0085]$ \\
+ & $\eta=1$ & 0.3900 & 0.3900 & 0.3900 & $+0.0000$ $[+0.0000,\,+0.0000]$ & $+0.0000$ $[+0.0000,\,+0.0000]$ \\
+\midrule
+E3 & $\kappa=0.25$ & 0.5239 & 0.5453 & 0.5448 & $-0.0210$ $[-0.0220,\,-0.0199]$ & $+0.0005$ $[+0.0002,\,+0.0008]$ \\
+ & $\kappa=0.5$ & 0.5258 & 0.5402 & 0.5402 & $-0.0144$ $[-0.0151,\,-0.0137]$ & $+0.0000$ $[+0.0000,\,+0.0000]$ \\
+ & $\kappa=0.75$ & 0.5371 & 0.5371 & 0.5371 & $+0.0000$ $[+0.0000,\,+0.0000]$ & $+0.0000$ $[+0.0000,\,+0.0000]$ \\
+ & $\kappa=1$ & 0.5343 & 0.5343 & 0.5343 & $+0.0000$ $[+0.0000,\,+0.0000]$ & $+0.0000$ $[+0.0000,\,+0.0000]$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Exactitud por fase (proporción de pasos de cada fase verdadera asignados correctamente; media sobre réplicas). D: defensiva, T: transición, At: ataque.}
+\label{tab:fase}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llccccccccc}
+\toprule
+ & & \multicolumn{3}{c}{Viterbi} & \multicolumn{3}{c}{Posterior} & \multicolumn{3}{c}{Referencia} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}\cmidrule(lr){9-11}
+Esc. & Nivel & D & T & At & D & T & At & D & T & At \\
+\midrule
+E1 & $\eta=\kappa=0$ & 0.810 & 0.251 & 0.430 & 0.689 & 0.493 & 0.432 & 0.701 & 0.500 & 0.399 \\
+\midrule
+E2 & $\eta=0.25$ & 0.858 & 0.084 & 0.294 & 0.626 & 0.435 & 0.391 & 0.610 & 0.459 & 0.383 \\
+ & $\eta=0.5$ & 0.973 & 0.005 & 0.055 & 0.594 & 0.375 & 0.317 & 0.517 & 0.416 & 0.366 \\
+ & $\eta=0.75$ & 1.000 & 0.000 & 0.000 & 0.717 & 0.245 & 0.139 & 0.686 & 0.374 & 0.000 \\
+ & $\eta=1$ & 1.000 & 0.000 & 0.000 & 1.000 & 0.000 & 0.000 & 1.000 & 0.000 & 0.000 \\
+\midrule
+E3 & $\kappa=0.25$ & 0.779 & 0.310 & 0.446 & 0.691 & 0.500 & 0.414 & 0.701 & 0.500 & 0.399 \\
+ & $\kappa=0.5$ & 0.752 & 0.378 & 0.424 & 0.702 & 0.500 & 0.398 & 0.702 & 0.500 & 0.398 \\
+ & $\kappa=0.75$ & 0.702 & 0.501 & 0.399 & 0.702 & 0.501 & 0.399 & 0.702 & 0.501 & 0.399 \\
+ & $\kappa=1$ & 0.702 & 0.501 & 0.399 & 0.702 & 0.501 & 0.399 & 0.702 & 0.501 & 0.399 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Matriz de confusión en E1 (conteo de pasos acumulado sobre todas las réplicas; filas: fase verdadera; columnas: fase asignada).}
+\label{tab:conf}
+\small
+\begin{tabular}{llrrr}
+\toprule
+Método & Fase verdadera & D & T & At \\
+\midrule
+Viterbi & defensiva & 157\,943 & 21\,876 & 15\,158 \\
+ & transición & 98\,947 & 42\,059 & 26\,433 \\
+ & ataque & 55\,068 & 23\,397 & 59\,119 \\
+\midrule
+Posterior & defensiva & 134\,433 & 48\,591 & 11\,953 \\
+ & transición & 64\,292 & 82\,581 & 20\,566 \\
+ & ataque & 37\,696 & 40\,432 & 59\,456 \\
+\midrule
+Referencia & defensiva & 136\,719 & 48\,524 & 9\,734 \\
+ & transición & 66\,945 & 83\,792 & 16\,702 \\
+ & ataque & 41\,323 & 41\,318 & 54\,943 \\
+\bottomrule
+\end{tabular}
+\end{table}

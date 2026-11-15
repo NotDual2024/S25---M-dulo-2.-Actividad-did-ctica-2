@@ -1,0 +1,6 @@
+python 3.14.2
+numpy 2.5.3
+plataforma Windows-11-10.0.26200-SP0
+semilla_raiz 20261109
+T=100 S=50 R=100
+duracion_s 78.7

@@ -1,0 +1,6 @@
+1) Exactitud esperada del clasificador de referencia (sum_o max_i p_i b_i(o)): 0.55
+2) Viterbi = busqueda exhaustiva en 100/100 secuencias simuladas (E1, T = 8)
+3) Exactitud media por paso en 2000 secuencias de E1 (T = 100):
+   viterbi    0.5221  (error estandar 0.0014)
+   posterior  0.5548  (error estandar 0.0012)
+   referencia 0.5516  (error estandar 0.0012)
